@@ -1,0 +1,228 @@
+/* reset default value */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* this is to get the default font size 10px, so that working with REM is easier rather than 16px default font size || math >> (10 / 16) * 100  */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 226, 245);
+    color: rgb(65, 64, 64);
+    padding: 1rem;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    font-size: 1.6rem;
+    margin: auto;
+    max-width: 70rem;
+    min-height: 100vh;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px -6px rgb(43, 38, 38);
+}
+
+.user-post {
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+.user-post__header {
+    display: flex;
+}
+
+.user-profile-pict {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+}
+
+.user-profile-img {
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+.user-post__header-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-post__header-notif {
+    margin-bottom: .5rem;
+}
+
+.user-post__dots {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.user-post__header-username {
+    font-weight: 600;
+    color: blueviolet;
+}
+
+.user-post__header-time {
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+.user-post__posting {
+    margin: 1.4rem 0;
+}
+
+.user-post__posting-text {
+    margin-bottom: 3rem;
+}
+
+.user-post__posting-img {
+    width: 100%;
+    max-height: 40rem;
+}
+
+.user-post__posting-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user-post__actions-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.user-post__actions-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-post__actions-item:first-child {
+    margin-right: 1.6rem;
+}
+
+.user-post__actions-icon {
+    vertical-align: middle;
+}
+
+
+/* COMMENT AREA */
+
+.user-comment {
+    padding: 1rem 2rem;
+}
+
+.user-comment__counter {
+    margin: 2rem 0;
+}
+
+.user-comment__counter-text {
+    display: inline-block;
+    margin-right: 1rem;
+ }
+
+.user-comment__counter-chevron {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.user-comment__list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.user-comment__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.user-comment__img {
+    min-width: 5rem;
+}
+
+.user-comment__desc {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-comment__time {
+    opacity: .7;
+}
+
+.user-comment__text {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.user-comment__reply {
+    opacity: .7;
+    margin-right: 1.6rem;
+}
+
+
+.user-comment__flag {
+    vertical-align: middle;
+}
+
+.user-comment__form {
+    display: flex;
+    width: 100%;
+}
+
+.user-comment__form form {
+    width: 100%;
+}
+
+.user-comment__input {
+    font-family: inherit;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .3rem;
+    resize: none;
+}
+
+.user-comment__input:focus {
+    outline: none;
+}
+
+.user-comment__button {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: rgb(138, 70, 202);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.user-comment__button:hover {
+    transform: scale(1.05);
+}

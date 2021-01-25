@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Challenge Three</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="user-post">
+        <div class="user-post__header">
+          <div class="user-post__header-img user-profile-pict">
+            <img class="user-profile-img" src="https://picsum.photos/id/1005/50/50/" alt="" />
+          </div>
+          <div class="user-post__header-desc">
+            <p class="user-post__header-notif">
+              <a href="#" class="user-post__header-username link">Garry Newman</a> posted on your timeline
+            </p>
+            <span class="user-post__header-time">32 minutes ago</span>
+          </div>
+          <svg class="user-post__dots icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+        </div>
+        <div class="user-post__posting">
+          <p class="user-post__posting-text">
+            Remember the place we were talking the other night? Found it!
+          </p>
+          <div class="user-post__posting-img">
+            <img src="https://picsum.photos/id/100/700/400" alt="">
+          </div>
+          <ul class="user-post__actions-list">
+            <li class="user-post__actions-item">
+              <svg class="user-post__actions-icon icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+              <a href="#" class="link">Like (5)</a>
+            </li>
+            <li class="user-post__actions-item">
+              <svg class="user-post__actions-icon icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path></svg>
+              <a href="#" class="link">Share (21)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="user-comment">
+        <div class="user-comment__counter">
+          <a href="#" class="user-comment__counter-text link">1 comments</a>
+          <svg class="user-comment__counter-chevron icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </div>
+        <ul class="user-comment__list">
+          <li class="user-comment__item">
+            <div class="user-comment__img user-profile-pict">
+              <img class="user-profile-img" src="https://picsum.photos/id/1027/50/50/" alt="" />
+            </div>
+            <div class="user-comment__desc">
+              <div class="user-comment__text-wrap">
+                <a href="#" class="link"><strong class="user-comment__username">Alice Freeman</strong></a> <span class="user-comment__time">June 10, 2018</span>
+              </div>
+              <p class="user-comment__text">That's a wonderful place. Lorem ipsum dolor sit amet conus Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="user-comment__actions">
+                <a href="#" class="user-comment__reply link">Reply</a>
+                <svg class="user-comment__flag icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="user-comment__form">
+          <div class="user-comment__img user-profile-pict">
+            <img class="user-profile-img" src="https://picsum.photos/id/1014/50/50/" alt="" />
+          </div>
+          <form>
+            <textarea rows="5" class="user-comment__input" placeholder="Add a comment..."></textarea>
+            <button class="user-comment__button">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
